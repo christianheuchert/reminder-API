@@ -106,18 +106,18 @@ router.patch('/change-password', requireToken, (req, res, next) => {
     // save user outside the promise chain
     .then(record => { user = record })
     // check that the old password is correct
-    .then(() => bcrypt.compare(req.body.passwords.old, user.hashedPassword))
+    .then(() => bcrypt.compare(req.body.password.old, user.hashedPassword))
     // `correctPassword` will be true if hashing the old password ends up the
     // same as `user.hashedPassword`
     .then(correctPassword => {
       // throw an error if the new password is missing, an empty string,
       // or the old password was wrong
-      if (!req.body.passwords.new || !correctPassword) {
+      if (!req.body.password.new || !correctPassword) {
         throw new BadParamsError()
       }
     })
     // hash the new password
-    .then(() => bcrypt.hash(req.body.passwords.new, bcryptSaltRounds))
+    .then(() => bcrypt.hash(req.body.password.new, bcryptSaltRounds))
     .then(hash => {
       // set and save the new hashed password in the DB
       user.hashedPassword = hash

@@ -9,6 +9,10 @@ const reminderSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  date: {
+    type: Date,
+    required: true
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
@@ -18,4 +22,4 @@ const reminderSchema = new mongoose.Schema({
   timestamps: true
 })
 
-module.exports = mongoose.model('Example', reminderSchema)
+module.exports = mongoose.model('Reminder', reminderSchema)

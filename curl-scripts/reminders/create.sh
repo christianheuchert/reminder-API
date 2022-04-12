@@ -4,8 +4,9 @@ API="http://localhost:4741"
 URL_PATH="/reminders"
 
   TOKEN="1095879403e603754675fa6133d1d8aa"
-  TITLE="Item to delete!"
-  TEXT="Garbage garbage garbage"
+  TITLE="TEST"
+  TEXT="Item to be edited and tested"
+  DATE="2022-06-28"
   
 
 curl "${API}${URL_PATH}" \
@@ -16,7 +17,8 @@ curl "${API}${URL_PATH}" \
   --data '{
     "reminder": {
       "text": "'"${TEXT}"'",
-      "title": "'"${TITLE}"'"
+      "title": "'"${TITLE}"'",
+      "date": "'"${DATE}"'"
     }
   }'
 

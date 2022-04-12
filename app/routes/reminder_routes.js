@@ -30,7 +30,7 @@ const router = express.Router()
 // INDEX
 // GET /reminders
 router.get('/reminders', requireToken, (req, res, next) => {
-  Reminder.find()
+  Reminder.find().sort({date: 1})
     .then(reminders => {
       // `reminders` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
