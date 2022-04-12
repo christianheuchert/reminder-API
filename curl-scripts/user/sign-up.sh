@@ -1,7 +1,10 @@
 #!/bin/bash
 
 API="http://localhost:4741"
-URL_PATH="/sign-in"
+URL_PATH="/sign-up"
+
+EMAIL="boy@gmail.com"
+PASSWORD="hello"
 
 curl "${API}${URL_PATH}" \
   --include \
@@ -10,7 +13,8 @@ curl "${API}${URL_PATH}" \
   --data '{
     "credentials": {
       "email": "'"${EMAIL}"'",
-      "password": "'"${PASSWORD}"'"
+      "password": "'"${PASSWORD}"'",
+      "password_confirmation": "'"${PASSWORD}"'"
     }
   }'
 

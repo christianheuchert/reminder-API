@@ -1,7 +1,11 @@
 #!/bin/bash
 
 API="http://localhost:4741"
-URL_PATH="/examples"
+URL_PATH="/reminders"
+
+TOKEN="1095879403e603754675fa6133d1d8aa"
+ID="625595dd184ed49dcedae3d5"
+TEXT="My Moms Bday!!!!!!"
 
 curl "${API}${URL_PATH}/${ID}" \
   --include \
@@ -9,7 +13,7 @@ curl "${API}${URL_PATH}/${ID}" \
   --header "Content-Type: application/json" \
 --header "Authorization: Bearer ${TOKEN}" \
 --data '{
-    "example": {
+    "reminder": {
       "text": "'"${TEXT}"'"
     }
   }'
