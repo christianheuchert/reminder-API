@@ -11,7 +11,9 @@ const reminderSchema = new mongoose.Schema({
   },
   date: {
     type: Date,
-    required: true
+    required: true,
+    min: new Date()
+
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
