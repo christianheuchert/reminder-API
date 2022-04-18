@@ -1,15 +1,13 @@
-# reminder-server README
-
 # Reminder Single Page Applicaiton: 
 ## create reminders consisting of an event title, event details, and event date. 
 
 ## Description:
-A single page application that keeps track of reminders. A user will enter an event, the reminder, they want to remember. The event is added to that users timeline. The time line keeps the next upcoming event at the top of the list and other events will scroll down the page. Events are ordered chronologically. I came up with the Reminder idea for birthdays, but a user could enter anything to remember. A key part of this SPA is that all user actions are required to be authorized. A user must log in to access and edit their reminders.  
+A single page application that keeps track of reminders. A user will enter an event, the reminder, they want to remember. The event is added to that users timeline. The time line keeps the next upcoming event at the top of the list and other events will scroll down the page. Events are ordered chronologically. I came up with the Reminder idea for birthdays, but a user could enter anything to remember. A key part of this SPA is that all user actions are required to be authorized. A user must log in to access and edit their reminders. 
 
 ## Links: 
-[deployed webpage](https://christianheuchert.github.io/reminder-client/)
-[client respository](https://github.com/christianheuchert/reminder-client)
-[server reposittory](https://github.com/christianheuchert/reminder-API)
+- [deployed webpage](https://christianheuchert.github.io/reminder-client/)
+- [client respository](https://github.com/christianheuchert/reminder-client)
+- [server repository](https://github.com/christianheuchert/reminder-API)
 
 ##  User stories: 
 - As a user, I want to be able to sign up, sign in, sign out, and change my password
