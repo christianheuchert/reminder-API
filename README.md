@@ -6,6 +6,7 @@ A single page application that keeps track of reminders. A user will enter an ev
 
 ## Links: 
 - [deployed webpage](https://christianheuchert.github.io/reminder-client/)
+- [heroku server](https://glacial-tor-22168.herokuapp.com)
 - [client respository](https://github.com/christianheuchert/reminder-client)
 - [server repository](https://github.com/christianheuchert/reminder-API)
 
